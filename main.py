@@ -60,7 +60,7 @@ fig = go.Figure(
 fig.update_layout(
     paper_bgcolor="black",
     width=400,
-    height=800,
+    height=600,
 )
 fig.update_traces(textfont_size=14)  # Adjust font size as desired
 fig.update_layout(margin={"r": 0, "t": 150, "l": 0, "b": 0})
