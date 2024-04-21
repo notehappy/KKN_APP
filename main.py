@@ -34,7 +34,7 @@ st.caption('For more information and details contact: Ekbordinw@ait.asia or pong
 
 
 
-df = pd.read_excel(r'./csv_for_WEDAPP/_emissioninventory_static_khonkean.xlsx')
+df = pd.read_excel('./csv_for_WEDAPP/_emissioninventory_static_khonkean.xlsx')
 left_column, right_column = st.columns(2)
 choice_left = df.columns[1:]
 choice_selected_left = left_column.selectbox("Select the pollutant types", choice_left)

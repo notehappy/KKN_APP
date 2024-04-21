@@ -25,7 +25,7 @@ st.sidebar.markdown("Home Page")
 # Data Downloading
 # =============================================================================
 
-json1 = r"..\csv_for_WEDAPP\base.json"
+json1 = r"../csv_for_WEDAPP/base.json"
 with open(json1) as response:
     geo = json.load(response)
 
