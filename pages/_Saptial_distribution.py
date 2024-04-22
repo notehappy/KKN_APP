@@ -25,7 +25,7 @@ st.sidebar.markdown("Home Page")
 # Data Downloading
 # =============================================================================
 
-json1 = r"../csv_for_WEDAPP/base.json"
+json1 = r"csv_for_WEDAPP/base.json"
 with open(json1) as response:
     geo = json.load(response)
 
@@ -44,7 +44,7 @@ list_file = {'All sectors':'all',
 choice_left = list_file.keys()
 choice_selected_left = left_column.selectbox("Select the sector", choice_left)
 
-df = pd.read_csv(rf'../csv_for_WEDAPP/{list_file.get(choice_selected_left)}.csv')
+df = pd.read_csv(rf'csv_for_WEDAPP/{list_file.get(choice_selected_left)}.csv')
 choice_right = df.columns[1:]
 choice_selected_right = right_column.selectbox("Select the pollutant types", choice_right)
 
